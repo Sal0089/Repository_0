@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="-1"/>
+    <style>
+      body {
+        display: flex;
+        justify-content: space-between; /* Posiziona gli elementi agli estremi */
+        align-items: center; /* Centra verticalmente gli elementi */
+        height: 100vh; /* Altezza piena della finestra */
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Centrare l'immagine a sinistra */
+      img {
+        float: left;
+        margin-left: 10px; /* Margine a sinistra per evitare che tocchi il bordo */
+      }
+      
+      /* Contenitore per il bottone a destra */
+      .button-container {
+        display: flex;
+        justify-content: center; /* Centra orizzontalmente il bottone */
+        align-items: center; /* Centra verticalmente il bottone */
+        width: 30%; /* Imposta la larghezza del contenitore del bottone */
+      }
+      
+      /* Stili per il bottone */
+      button {
+        font-size: 24px; /* Ingrandisce il testo del bottone */
+        padding: 20px 40px; /* Ingrandisce le dimensioni del bottone */
+        background-color: #4CAF50; /* Colore di sfondo verde */
+        color: white; /* Colore del testo */
+        border: none;
+        border-radius: 10px; /* Rende i bordi arrotondati */
+        cursor: pointer; /* Cambia il cursore quando sopra il bottone */
+        transition: background-color 0.3s; /* Aggiunge un effetto di transizione */
+      }
+      
+      /* Cambia il colore di sfondo quando il bottone viene passato sopra */
+      button:hover {
+        background-color: #45a049;
+      }
+      
+      /* Audio */
+      audio {
+        display: none; /* Nascondi il player audio */
+      }
+    </style>
+    <title>BongaHTML_test</title>
+  </head>
+  <body>
+    GATTO TRISTE, TRISTISSIMO?? <br>
+    <script> 
+      var ok = confirm("OK-gatto felice, ANNULLA-gatto triste??"); 
+      if (ok) {
+            window.location.href = "https://www.jwj.org/wp-content/uploads/2015/01/happy-kitten-kittens-5890512-1600-1200.jpg";  // URL immagine 1
+      } 
+    </script>
+    <div>
+      <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/6affdf36-65e3-4e6f-b715-f11ba6e81563/f0a51371-7169-4a4b-bbce-b8b694142727.png">
+      <audio id="myAudio">
+          <source src="https://sal0089.github.io/Repository_0/audio.mp3" type="audio/mp3">
+          Il tuo browser non supporta il tag audio.
+      </audio>
+      <button onclick="document.getElementById('myAudio').play()">TOCCAMI ;((</button>
+    </div>
+  </body>
+</html>
