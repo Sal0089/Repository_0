@@ -3,11 +3,49 @@
     <meta http-equiv="Pragma" content="no-cache"/>
     <meta http-equiv="Expires" content="-1"/>
     <style>
+      body {
+        display: flex;
+        justify-content: space-between; /* Posiziona gli elementi agli estremi */
+        align-items: center; /* Centra verticalmente gli elementi */
+        height: 100vh; /* Altezza piena della finestra */
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Centrare l'immagine a sinistra */
       img {
         float: left;
+        margin-left: 10px; /* Margine a sinistra per evitare che tocchi il bordo */
       }
+      
+      /* Contenitore per il bottone a destra */
+      .button-container {
+        display: flex;
+        justify-content: center; /* Centra orizzontalmente il bottone */
+        align-items: center; /* Centra verticalmente il bottone */
+        width: 30%; /* Imposta la larghezza del contenitore del bottone */
+      }
+      
+      /* Stili per il bottone */
       button {
-        float:right;
+        font-size: 24px; /* Ingrandisce il testo del bottone */
+        padding: 20px 40px; /* Ingrandisce le dimensioni del bottone */
+        background-color: #4CAF50; /* Colore di sfondo verde */
+        color: white; /* Colore del testo */
+        border: none;
+        border-radius: 10px; /* Rende i bordi arrotondati */
+        cursor: pointer; /* Cambia il cursore quando sopra il bottone */
+        transition: background-color 0.3s; /* Aggiunge un effetto di transizione */
+      }
+      
+      /* Cambia il colore di sfondo quando il bottone viene passato sopra */
+      button:hover {
+        background-color: #45a049;
+      }
+      
+      /* Audio */
+      audio {
+        display: none; /* Nascondi il player audio */
       }
     </style>
     <title>BongaHTML_test</title>
